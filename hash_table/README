@@ -1,0 +1,49 @@
+                      Tema 1 – Structuri de date (seria CB) 
+                                  Tabele hash 
+
+  Despre ce este vorba?
+  ---------------------
+
+    Tabelele de dispersie reprezintă o modalitate foarte eficientă de implementare a 
+  dicţionarelor.
+
+    Acestea asigură complexitate constantă O(1) în medie, pentru operaţiile de inserare,
+  ştergere şi căutare.
+
+    Dispersia nu presupune ordonarea informaţiei păstrate. Operaţiile cu arbori, care 
+  presupun ordonarea informaţiei între elemente sunt mai puţin eficiente (O(log n)).
+
+    Dacă:
+      * structura de date (tabela de dispersie) e accesată prin valoarea unei chei în O(1)
+      * funcţia care transformă cheia într-o poziţie într-un tabel are complexitate O(1)
+    atunci inserarea / ştergerea / căutarea se vor face cu complexitate O(1)
+
+    Dispersia implementează această idee folosind:
+      * o tabelă de dispersie
+      * o funcţie de dispersie
+
+    Dacă funcţia de dispersie calculează pentru două chei diferite aceeaşi valoare de 
+  dispersie, se produce o coliziune. Aceesul la cheile aflate în coliziune nu se mai face 
+  cu complexitate constantă.
+
+    Pentru a reduce coliziunile se folosesc tabele de dimensiuni foarte mari. (eficienţa 
+  temporală mai bună este anihilată de eficienţa spaţială mai proastă).
+
+  Implementare
+  ------------
+
+    Implementarea functiilor de hash(__hashTable_hash) si de comparare a cheilor(__hashTable
+  _compareKeys) este facuta pentru chei de tip sir de caractere. Implementarea celorlalte
+  functii este generica, ele putand fi folosite cu orice tip de cheie, atat timp cat se
+  asigura implementarea aferenta tipului de date functiilor de hash si de comparare a cheilor.
+
+  Lista de fisiere
+  ----------------
+
+    list.h
+    list.c
+    hashTable.h
+    hashTable_charKey.c
+    main.c
+    Makefile
+    README

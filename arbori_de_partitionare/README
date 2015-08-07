@@ -1,0 +1,33 @@
+                      Tema 3 – Structuri de date (seria CB) 
+                             Arbori de partiționare
+
+  Lista de fisiere
+  ----------------
+
+    utils.h
+    utils.c
+    bsp_tree.h
+    bsp_tree.c
+    main.c
+    Makefile
+    README
+
+  Prezentare
+  ----------
+
+      In fisierele utils.h/utils.c sunt implementate functii auxiliare pentru lucrul 
+  cu puncte si linii.
+
+      Fisierele bsp_tree.h/bsp_tree.c contin implementarea tipului de date TBspTree pentru arbori 
+  de partitionare. Contin functii pentru alocarea unui nod nou, inserarea de drepte si 
+  puncte de identificare, distrugere si afisare a arborelui.
+
+      Crearea unui arbore de partitionare cu aceasta implementare, se face prin inserarea
+  mai intai a dreptelor ce impart planurile, urmand apoi inserarea dreptelor de identificare.
+  Odata introduse punctele de identificare, nu se mai poate modifica structura arborelui.
+  Nerespectarea acestei conditii duce la rezultate neasteptate. Asadar, crearea arborelui 
+  se face doar in aceasta ordine.
+
+      In fisierul main.c sunt implementate functia pentru aflarea planului in care se afla
+  un anumit punct, si functia de reconstruire a unui arbore de partitionare fiind data 
+  organizarea nodurilor utile.

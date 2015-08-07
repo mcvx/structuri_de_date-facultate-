@@ -1,0 +1,40 @@
+                      Tema 2 – Structuri de date (seria CB) 
+                             Planificator de procese 
+
+  Despre ce este vorba?
+  ---------------------
+
+	Orice  sistem  de  operare  modern  conține  un  subsistem  care  se  ocupa  cu 
+administrarea proceselor, numit planificator de procese, al cărui rol este de a determina 
+la fiecare moment de timp procesul care se execută pe procesor. În cadrul unui astfel de 
+planificator, orice proces este caracterizat de două valori:
+
+	* id - un identificator unic al procesului în cadrul sistemului;
+	* prioritate - un număr întreg pozitiv, care determină ordinea în care sunt planificate 
+	  procesele.
+
+	Un proces se poate afla la un anumit moment în una din următoarele stări:
+
+	* ready - așteaptă să fie planificat, deoarece exista un proces cu o prioritate mai bună 
+	  care rulează în acel moment;
+	* waiting - procesul  așteaptă  terminarea  unui  eveniment extern  (de  exemplu  de 
+	  intrare/ieșire). Chiar daca procesul are prioritatea cea mai mare, el nu va fi planificat 
+	  pentru execuție până când evenimentul pe care îl așteaptă nu se produce;
+	* running - procesul  este  cel  ales  pentru  a  rula,  deoarece  este  procesulcu  cea  
+	  mai bună prioritate dintre cele care nu așteaptă după niciun eveniment.
+
+	În concluzie, la un anumit moment de timp va fi ales pentru execuție procesul care are cea 
+mai mare prioritate și nu așteaptă producerea unui eveniment
+
+  Lista de fisiere
+  ----------------
+
+    list.h
+    list.c
+    queue.h
+    queue.c
+    stack.h
+    stack.c
+    main.c
+    Makefile
+    README
